@@ -1,10 +1,9 @@
-## XR-based HRTF Measurement System
-
-# Overview
-# Software
-## XR Interface
-## Measurement control app
-## Postprocessing
+# XR-based HRTF Measurement System
+## Overview
+## Software
+### XR Interface
+### Measurement control app
+### Postprocessing
 
 <!--
 You can use the [editor on GitHub](https://github.com/trsonic/XR-HRTFs/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
