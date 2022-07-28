@@ -1,29 +1,74 @@
 ---
 title: Home
 layout: default
+youtubeId: 0HFyuNkdhz8
+
 ---
 
-This paper discusses a Head Related Transfer Function (HRTF) measurement system utilizing a minimal hardware configuration. Thanks to the visual 3D cues displayed by a mixed-reality headset, the subject positions their head in relation to the single loudspeaker following a predefined list of measurement points. During this automated procedure, Head Related Impulse Responses (HRIRs) of the individual are captured at different sound incidence angles. The proposed post-processing of the measured responses is aimed at eliminating the acoustic characteristic of the room where the measurement was taken. A direction-dependent correction filter derived from laboratory measurements is proposed in order to compensate for the influence of the XR headset on HRTFs.
+## Background
+This project was initially developed during the COVID-19 pandemic, when the research facilities of AudioLab (University of York) could not be accessed for the purpose of individual HRTF measurements. Therefore a system for capturing sparse HRTF sets at home environment using a minimal hardware configuration was developed as a tool to further advance research into perceptual evaluation methods for spatial audio. The project together with a paper describing the system is to be presented at the 4th International Conference on Audio for Virtual and Augmented Reality in Redmond, WA  on August 15-17, 2022.
 
-## Hardware Requirements
-## XR headset
+
+## How Does it Work
+Thanks to the visual 3D cues displayed by a mixed-reality headset, the subject positions their head in relation to the single loudspeaker following a predefined list of measurement points. During this automated procedure, Head Related Impulse Responses (HRIRs) are captured at different sound incidence angles. The post-processing of the measured responses is aimed at eliminating the acoustic characteristic of the room where the measurement was taken.
+
+## Demo Video
+{% include ytPlayer.html id=page.youtubeId %}
+
+## System Architecture
+![Block Diagram](img/block-diagram.png)
+
+## Getting Started: Hardware
+Equpiment list:
+* XR headset
+* Loudspeaker
+* In-ear Microphones
+* PC with Audio Interface
+* Wifi Router
+
 Currently the only supported headset is Quest 2.
 
-## Loudspeaker
-The system was mainly tested with a custom 3D printed loudspeaker, however it should work fine with any decent audio source.
+The system was mainly tested with a custom 3D printed loudspeaker, however, it should work fine with any decent audio source.
 
-## In-ear Microphones
-
-## PC with Audio Interface
+The process requires a pair of in-ear microphones inserted into ear canals.
 
 Any Windows, Mac or Linux PC should work. The systems was tested with RME Fireface USB interface.
 
-## Software
-### XR Interface
-[SOURCE](https://github.com/trsonic/XR-HRTF-Q2/)
 
-### Measurement control app
-[SOURCE](https://github.com/trsonic/XR-HRTF-capture-juce/)
+## Getting Started: Software
+* [XR Interface](https://github.com/trsonic/XR-HRTF-Q2/)
+* [Measurement Control App](https://github.com/trsonic/XR-HRTF-capture-juce/)
+* [MATLAB Postprocessing Scripts](https://github.com/trsonic/XR-HRTF-processing/)
 
-### Postprocessing
-[SOURCE](https://github.com/trsonic/XR-HRTF-processing/)
+A mixed-reality app developed in Unity using Oculus SDK. The app is used for head orientation and position control.
+
+A C++ app developed using [JUCE](https://github.com/WeAreROLI/JUCE/) framework.
+
+A set of Matlab scripts to process captured sweeps.
+
+
+## Contributing
+We would like to encourage other researchers to use the system and participate in its further development. Please contact us if you have any ideas and suggestions how this tool could be improved.
+
+## Authors
+* Tomasz Rudzki, email: <tr837@york.ac.uk>
+
+## License
+GNU General Public License v3.0
+
+## Acknowledgments
+* 
+
+## Citation
+```
+@inproceedings{rudzki2022xr,
+  title={XR-based HRTF Measurements},
+  author={Rudzki, Tomasz and Murphy, Damian and Kearney, Gavin},
+  booktitle={Audio Engineering Society Conference: 2022 AES International Conference on Audio for Virtual and Augmented Reality},
+  year={2022},
+  organization={Audio Engineering Society}
+}
+```
+
+## Safety Note
+This is an experimental tool which is in its early stage of development and may contain bugs. Please be aware that it may break anytime during runtime and users might experience unpleasant and loud noises.
