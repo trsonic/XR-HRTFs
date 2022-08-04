@@ -36,15 +36,10 @@ Any Windows, Mac or Linux PC should work. The systems was tested with RME Firefa
 
 
 ## Getting Started: Software
-* [XR Interface](https://github.com/trsonic/XR-HRTF-Q2/)
-* [Measurement Control App](https://github.com/trsonic/XR-HRTF-capture-juce/)
-* [MATLAB Postprocessing Scripts](https://github.com/trsonic/XR-HRTF-processing/)
-
-A mixed-reality app developed in Unity using Oculus SDK. The app is used for head orientation and position control.
-
-A C++ app developed using [JUCE](https://github.com/WeAreROLI/JUCE/) framework.
-
-A set of Matlab scripts to process captured sweeps.
+More information on each of the software components of the system can be found in the following repositories:
+* [XR Interface](https://github.com/trsonic/XR-HRTF-Q2/): A mixed-reality app developed in Unity using Oculus SDK. The app is used for head orientation and position control.
+* [Measurement Control App](https://github.com/trsonic/XR-HRTF-capture/): A C++ app used for sweep signal playback, recording and measurement control.
+* [Postprocessing Scripts](https://github.com/trsonic/XR-HRTF-processing/): A set of Matlab scripts to process captured sweeps.
 
 
 ## Contributing
@@ -71,4 +66,4 @@ GNU General Public License v3.0
 ```
 
 ## Safety Note
-This is an experimental tool which is in its early stage of development and may contain bugs. Please be aware that it may break anytime during runtime and users might experience unpleasant and loud noises.
+Remain cautious when playing back sweep sine signals through measurement loudspeaker or headphones. Always wear hearing protection. In order to minimize the exposure of the subject to test signals, only blocked ear canal measurements are recommended. Anyway, please be careful at all times!!! This is an experimental tool which is in its early stage of development and may contain bugs.
