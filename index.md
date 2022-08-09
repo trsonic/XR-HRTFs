@@ -1,13 +1,12 @@
 ---
 title: Home
 layout: default
-youtubeId: 0HFyuNkdhz8
+youtubeId: tix4jnCnJE0
 
 ---
 
 ## Background
 This project was initially developed during the COVID-19 pandemic, when the research facilities of AudioLab (University of York) could not be accessed for the purpose of individual HRTF measurements. Therefore a system for capturing sparse HRTF sets at home environment using a minimal hardware configuration was developed as a tool to further advance research into perceptual evaluation methods for spatial audio. The project together with a paper describing the system is to be presented at the 4th International Conference on Audio for Virtual and Augmented Reality in Redmond, WA  on August 15-17, 2022.
-
 
 ## How Does it Work
 Thanks to the visual 3D cues displayed by a mixed-reality headset, the subject positions their head in relation to the single loudspeaker following a predefined list of measurement points. During this automated procedure, Head Related Impulse Responses (HRIRs) are captured at different sound incidence angles. The post-processing of the measured responses is aimed at eliminating the acoustic characteristic of the room where the measurement was taken.
